@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.buttonPos{
+    z-index: 1;
+}
+
+.navPad{
+    padding-bottom: 5%;
+}
+.navPad2{
+    padding-top: 5%;
+}
+
+.type {
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: step-end;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.usebg{
+    z-index: -1;
+}
+
+.bgTransition{
+    transition: background-image 2s ease-in-out;
+}
+
+.cardBG{
+    background: rgba(255, 255, 255, 0.2);
+}
+      
+@keyframes blink {
+    50% {
+      border-color: rgba(255, 255, 255, 0);
+    }
+}
